@@ -11,6 +11,7 @@ function TodoApp() {
  
 
   const addTodo = (todo) => {
+    console.log("Adding todo:", todo);
     setTodos([...todos, { id: Date.now(), text: todo, completed: false }]);
   }
 
